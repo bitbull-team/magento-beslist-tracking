@@ -1,0 +1,14 @@
+{
+    "name": "bitbull/magento-bestlist-tracking",
+    "type": "magento-module",
+    "description": "This module integrate conversion tracking script in checkout success page for Beslist.nl, a dutch product aggregator.",
+    "authors":[
+        {
+            "name":"Gennaro Vietri",
+            "email":"gennaro.vietri@bitbull.it"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
