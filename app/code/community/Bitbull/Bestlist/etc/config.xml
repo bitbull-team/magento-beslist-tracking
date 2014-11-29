@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Bitbull
+ * @package    Bitbull_Bestlist
+ * @author     Gennaro Vietri <gennaro.vietri@bitbull.it>
+ */
+-->
+<config>
+    <modules>
+        <Bitbull_Bestlist>
+            <version>1.0.0</version>
+        </Bitbull_Bestlist>
+    </modules>
+    <global>
+        <models>
+            <bitbull_bestlist>
+                <class>Bitbull_Bestlist_Model</class>
+            </bitbull_bestlist>
+        </models>
+        <blocks>
+            <bitbull_bestlist>
+                <class>Bitbull_Bestlist_Block</class>
+            </bitbull_bestlist>
+        </blocks>
+        <helpers>
+            <bitbull_bestlist>
+                <class>Bitbull_Bestlist_Helper</class>
+            </bitbull_bestlist>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <bitbull_bestlist_order_success>
+                        <class>bitbull_bestlist/observer</class>
+                        <method>setBestlistOnOrderSuccessPageView</method>
+                    </bitbull_bestlist_order_success>
+                </observers>
+            </checkout_onepage_controller_success_action>
+            <checkout_multishipping_controller_success_action>
+                <observers>
+                    <bitbull_bestlist_order_success>
+                        <class>bitbull_bestlist/observer</class>
+                        <method>setBestlistOnOrderSuccessPageView</method>
+                    </bitbull_bestlist_order_success>
+                </observers>
+            </checkout_multishipping_controller_success_action>
+        </events>
+        <layout>
+            <updates>
+                <bitbull_bestlist>
+                    <file>bitbull/bestlist.xml</file>
+                </bitbull_bestlist>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Bitbull_Bestlist>
+                    <files>
+                        <default>Bitbull_Bestlist.csv</default>
+                    </files>
+                </Bitbull_Bestlist>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>

@@ -1,2 +1,4 @@
 app/code/community/Bitbull/Bestlist/             app/code/community/Bitbull/Bestlist/
 app/etc/modules/Bitbull_Bestlist.xml         app/etc/modules/Bitbull_Bestlist.xml
+app/design/frontend/base/default/layout/bitbull/bestlist.xml    app/design/frontend/base/default/layout/bitbull/bestlist.xml
+app/design/frontend/base/default/template/bitbull/bestlist  app/design/frontend/base/default/template/bitbull/bestlist

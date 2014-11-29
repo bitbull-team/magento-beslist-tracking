@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Bitbull
+ * @package    Bitbull_Bestlist
+ * @author     Gennaro Vietri <gennaro.vietri@bitbull.it>
+*/
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="head" before="-">
+            <block type="bitbull_bestlist/tracking" name="bitbull_bestlist" as="bitbull_bestlist" template="bitbull/bestlist/tracking.phtml"/>
+        </reference>
+    </default>
+</layout>
